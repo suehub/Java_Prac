@@ -1,6 +1,8 @@
 package car;
 
-public class Car {
+import common.Base;
+
+public class Car extends Base {
 	String carNumber;
 	String carName;
 	String carColor;

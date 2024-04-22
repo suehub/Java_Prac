@@ -1,6 +1,8 @@
 package member;
 
-public class Member extends Base{
+import car.Car;
+
+public class Member extends Car {
 
 	String id;
 	String password;
