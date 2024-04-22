@@ -20,16 +20,16 @@ public class RentCarApp {
 		
 		// 회원 정보 조회
 		String memberInfo = member.viewMember();
-		System.out.println(memberInfo);
-		
+		car.display(memberInfo);	// 부모 클래스의 메서드를 사용해서 회원 정보를 출력
+
 		// 렌터카 정보 조회
 		String carInfo = car.checkCarInfo();
 		System.out.println(carInfo);
+		car.displayDate(carInfo);
 		
 		//예약 정보 조회
 		String resInfo = reserve.checkResInfo();
-		System.out.println(resInfo);
-		
+		car.displayData(resInfo);
 		
 
 	}

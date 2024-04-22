@@ -1,6 +1,6 @@
 package member;
 
-public class Member {
+public class Member extends Base{
 
 	String id;
 	String password;
@@ -24,6 +24,7 @@ public class Member {
 	public String viewMember() {
 		System.out.println("\n회원 정보를 조회합니다.");
 		System.out.println("----------------------");
+		System.out.println("회원 조회 시간: " + showTime());
 		String memberInfo = "아이디: " + id + "\n비밀번호: " + password + "\n이름: " + name + "\n주소: " + address + "\n전화번호: " + phoneNum;
 		
 		return memberInfo;
@@ -43,11 +44,15 @@ public class Member {
 	// 회원 정보 수정
 	public void modMember() {
 		System.out.println("\n회원 정보 수정");
+		System.out.println("회원 수정 시간: " + showTime());
 	}
 	
 	// 회원 정보 삭제
 	public void delMember() {
+
 		System.out.println("\n회원 정보 삭제");
+		System.out.println("회원 삭제 시간: " + showTime());
+
 	}
 	
 	
