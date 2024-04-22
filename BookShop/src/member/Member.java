@@ -21,7 +21,7 @@ public class Member {
     public String printUserInfo () {
         String info = id + " " + password + " " + name + " " + address + " " + phoneNum;
 
-        return "";
+        return info;
     }
 
     // 회원 정보 등록
