@@ -3,28 +3,17 @@ public class College extends Student {
     private char credit;
 
     public College() {
-        this("이순신", 2, 20);
         System.out.println("College 클래스의 기본 생성자 호출");
     }
 
-    public College(String name, int grade, int courses) {
+    public College(String name, int grade, int courses, String teacher) {
         super();
         System.out.println("매개변수가 3개인 College 생성자 호출");
 
         super.name = name;
         super.grade = grade;
+        super.teacher = teacher;
         this.courses = courses;
-    }
-
-    public College(String name, int grade, int courses, String gender, int age) {
-        super();
-        System.out.println("매개변수가 5개인 College 생성자 호출");
-        super.gender = gender;
-        super.age = age;
-        super.name = name;
-        super.grade = grade;
-        this.courses = courses;
-
     }
 
     public int getCourses() {
@@ -35,9 +24,15 @@ public class College extends Student {
         return credit;
     }
 
-    @Override
     public String getStudentInfo() {
-        System.out.println("College 클래스의 getStudentInfo() 메서드입니다.");
-        return "이름>> " + name + ", 학년>> " + grade + ", 학점>> " + courses + ", 성별 >> " + gender;
+        System.out.println("College 클래스의 getStudentInfo() 메서드 호출");
+        return "이름은 >> " + name + ", 학년은 " + grade + ", 신청 학점은 >> " + courses;
     }
+
+    @Override
+    public String getTeacher() {
+        return "지도 교수님: " + teacher;
+    }
+
+
 }
