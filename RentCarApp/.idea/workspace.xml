@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8f9951df-d7c5-4f98-b216-65efbff84cec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookShop/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookShop/src/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookShop/src/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RentCarApp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/RentCarApp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch02/ch02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02/ch02.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch03/ch03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch03/ch03.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch05/ch05.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch05/ch05.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch06/ch06.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch06/ch06.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch07/ch07.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch07/ch07.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch08/ch08.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08/ch08.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/AbstractBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/member/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/Reserve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/Reserve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Student/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Student/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +20,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "suehub"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;suehub&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/suehub/Java_Prac",
-    "accountId": "9557e18d-a893-44ba-8da2-7ca5ff317329"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/suehub/Java_Prac&quot;,
+    &quot;accountId&quot;: &quot;9557e18d-a893-44ba-8da2-7ca5ff317329&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2fRBWVgKxP9qFJYIQ24KkLfsayN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,6 +46,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -75,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713754042626</updated>
       <workItem from="1713754043660" duration="29000" />
+      <workItem from="1713771212737" duration="635000" />
     </task>
     <servers />
   </component>

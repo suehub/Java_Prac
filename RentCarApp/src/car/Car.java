@@ -1,8 +1,10 @@
 package car;
 
-import common.Base;
+import common.AbstractBase;
 
-public class Car extends Base {
+import java.util.Calendar;
+
+public class Car extends AbstractBase {
 	String carNumber;
 	String carName;
 	String carColor;
@@ -48,4 +50,28 @@ public class Car extends Base {
 		System.out.println("\n렌터카 정보를 삭제합니다.");
 	}
 
+	@Override
+	public void displayData(String data) {
+		System.out.println("조회한 차 데이터는 " + data + "입니다.");
+	}
+
+	@Override
+	public String showTime() {
+		String date = null;
+		String time = null;
+
+		Calendar cal = Calendar.getInstance(); // Calendar 인스턴스 얻음
+		int hour = cal.get(Calendar.HOUR);
+		int minute = cal.get(Calendar.MINUTE);
+		int second = cal.get(Calendar.SECOND);
+
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH) + 1;
+		int day = cal.get(Calendar.DATE);
+
+		date = year + "-" + month + "-" + day;
+		time = hour + ":" + minute + ":" + second;
+
+		return date + " " + time;
+	}
 }

@@ -1,6 +1,10 @@
 package res;
 
-public class Reserve {
+import common.AbstractBase;
+
+import java.util.Calendar;
+
+public class Reserve extends AbstractBase {
 
 	String resNumber;
 	String resCarNumber;
@@ -46,5 +50,30 @@ public class Reserve {
 	// 차 예약 정보 취소 기능
 	public void cancelResInfo() {
 		System.out.println("\n차 예약을 취소합니다.");
+	}
+
+	@Override
+	public void displayData(String data) {
+		System.out.println("조회한 예약 데이터는 " + data + "입니다.");
+	}
+
+	@Override
+	public String showTime() {
+		String date = null;
+		String time = null;
+
+		Calendar cal = Calendar.getInstance(); // Calendar 인스턴스 얻음
+		int hour = cal.get(Calendar.HOUR);
+		int minute = cal.get(Calendar.MINUTE);
+		int second = cal.get(Calendar.SECOND);
+
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH) + 1;
+		int day = cal.get(Calendar.DATE);
+
+		date = year + "-" + month + "-" + day;
+		time = hour + ":" + minute + ":" + second;
+
+		return date + " " + time;
 	}
 }
