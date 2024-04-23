@@ -2,60 +2,54 @@ package member;
 
 import car.Car;
 import common.AbstractBase;
+import common.DataUtil;
 
 import java.util.Calendar;
 
 public class Member extends AbstractBase {
 
-	String id;
-	String password;
-	String name;
-	String address;
-	String phoneNum;
+	String memberData;
 	
 	// 생성자
 	public Member () {}
 	
-	public Member (String _id, String _password, String _name, String _address, String _phoneNum) {
-		id = _id;
-		password = _password;
-		name = _name;
-		address = _address;
-		phoneNum = _phoneNum;
-		
-	}
-	
 	// 회원 정보 조회
-	public String viewMember() {
-		System.out.println("\n회원 정보를 조회합니다.");
-		System.out.println("----------------------");
+	public String viewMemter(MemberVO vo) {
+		DataUtil.decodeData(memberData);
+		memberData = "회원 아이디: " + vo.id + ",\n회원 비밀번호: " + vo.password + ",\n회원 이름: " + vo.name + ",\n회원 전화번호: " + vo.phoneNum;
+
+		System.out.println("회원 정보를 조회합니다.");
 		System.out.println("회원 조회 시간: " + showTime());
-		String memberInfo = "아이디: " + id + "\n비밀번호: " + password + "\n이름: " + name + "\n주소: " + address + "\n전화번호: " + phoneNum;
-		
-		return memberInfo;
+
+		return memberData;
 	}
 
-	// 회원 정보 등록
-	public void regMember(String id, String password, String name, String address, String phoneNum) {
-		System.out.println("회원가입");
-		this.id = id;
-		this.password = password;
-		this.name = name;
-		this.address = address;
-		this.phoneNum = phoneNum;
-		
+	// 새로운 회원 등록
+	public void regMember(MemberVO vo) {
+		memberData = vo.id + "," + vo.name + "," + vo.password + "," + vo.phoneNum;
+
+		DataUtil.encodeData(memberData);	// 회원 정보 등록 전 암호화
+
+		System.out.println("\n회원가입 합니다");
+		System.out.println("회원 가입 시간: " + showTime());
+
 	}
 	
-	// 회원 정보 수정
-	public void modMember() {
-		System.out.println("\n회원 정보 수정");
+	// 기존 회원 정보 수정
+	public void modMember(MemberVO vo) {
+		memberData = vo.id + "," + vo.name + "," + vo.password + "," + vo.phoneNum;
+		DataUtil.encodeData(memberData);	// 수정한 회원 정보 암호화
+
+		System.out.println("\n회원 정보를 수정합니다");
 		System.out.println("회원 수정 시간: " + showTime());
 	}
 	
-	// 회원 정보 삭제
-	public void delMember() {
+	// 기존 회원 정보 삭제
+	public void delMember(MemberVO vo) {
+		memberData = vo.id + "," + vo.name + "," + vo.password + "," + vo.phoneNum;
+		DataUtil.decodeData(memberData);	// 삭제하기 전 회원 정보 복호화
 
-		System.out.println("\n회원 정보 삭제");
+		System.out.println("\n회원 정보를 삭제합니다.");
 		System.out.println("회원 삭제 시간: " + showTime());
 
 	}

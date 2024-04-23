@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f9951df-d7c5-4f98-b216-65efbff84cec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/car/CarVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/DataUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/member/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/ResVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/AbstractBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/RentCarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/RentCarApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/member/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/res/Reserve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/Reserve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Student/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -36,24 +46,28 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2fRBWVgKxP9qFJYIQ24KkLfsayN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.RentCarApp.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.RentCarApp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,7 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1713754042626</updated>
       <workItem from="1713754043660" duration="29000" />
-      <workItem from="1713771212737" duration="635000" />
+      <workItem from="1713771212737" duration="1885000" />
+      <workItem from="1713831927859" duration="2950000" />
     </task>
     <servers />
   </component>
