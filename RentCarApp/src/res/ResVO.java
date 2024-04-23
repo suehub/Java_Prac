@@ -8,7 +8,7 @@ public class ResVO {
     String returnDate;
 
 
-    public ResVO(String resNumber, String resCarNumber, String resDate, String useBeginDate, String useEndDate) {
+    public ResVO(String resNumber, String resCarNumber, String resDate, String useBeginDate, String returnDate) {
         this.resNumber = resNumber;
         this.resCarNumber = resCarNumber;
         this.resDate = resDate;
