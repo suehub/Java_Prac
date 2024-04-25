@@ -11,7 +11,7 @@ public class MemberImpl extends AbstractBase implements Member {
 
 	// 회원 정보 조회
 	@Override
-	public String viewMember(MemberVO vo) {
+	public String viewMember(MemberVO vo) throws MemberException{
 		DataUtil.decodeData(memberData);
 		memberData = "회원 아이디: " + vo.id + ",\n회원 비밀번호: " + vo.password + ",\n회원 이름: " + vo.name + ",\n회원 전화번호: " + vo.phoneNum;
 
@@ -23,8 +23,14 @@ public class MemberImpl extends AbstractBase implements Member {
 
 	// 새로운 회원 등록
 	@Override
-	public void regMember(MemberVO vo) {
-		memberData = vo.id + "," + vo.name + "," + vo.password + "," + vo.phoneNum;
+	public void regMember(MemberVO vo) throws MemberException{
+		String id = vo.id;
+		if (id == null || id.equals("")) {
+			throw new MemberException("아이디는 필수 입력 정보입니다.");
+		} else {
+			memberData = vo.id + "," + vo.name + "," + vo.password + "," + vo.phoneNum;
+		}
+
 
 		DataUtil.encodeData(memberData);	// 회원 정보 등록 전 암호화
 
