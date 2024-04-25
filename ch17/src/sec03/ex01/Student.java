@@ -1,9 +1,9 @@
-package sec01.ex05;
+package sec03.ex01;
 
 import java.util.Objects;
 
 public class Student {
-    public String hakbun;
+    String hakbun;
     String name;
     int grade;
 
